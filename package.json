@@ -1,11 +1,14 @@
 {
   "name": "scott-wegmann-p2",
   "version": "1.0.0",
+  "description": "Updated readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node -r esm server.js",
-    "server": "nodemon -r esm server.js"
+    "server": "nodemon -r esm server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm rin client\""
 
   },
 
